@@ -47,7 +47,7 @@ skillHeader.forEach((e) => {
 
 
 
-~
+
 
 
 

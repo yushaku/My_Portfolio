@@ -286,6 +286,148 @@ img{
     align-items: center;
 }
 
+/************** ABOUT SECTION ***************/
+
+.about{
+    text-align: center;
+    padding: 20px;
+}
+.about__img{
+    width: 200px;
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-self: center;
+    margin-top: var(--md-2);
+}
+
+.about__description{
+    text-align: center;
+    margin-bottom: var(--md-2-5);
+}
+.about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--md-2-5);
+}
+.about__info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+.about__info-name{
+    font-size:var(--small-font-size);
+
+}
+
+.about__info-name,
+.about__info-title{
+    display: block;
+    text-align: center;
+}
+.about__buttons{
+    display: flex;
+    justify-content: center;
+}
+/*================= skill =======================*/
+.skill{
+    text-align: center;
+    margin-top: var(--md-2-5);
+    padding: 20px;
+}
+.skill__container{
+    margin-top: var(--md-2-5);
+    row-gap: 0;
+}
+.skill__content{
+
+}
+.skill__header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--md-2-5);
+    cursor: pointer;
+}
+.skill__icon,
+.skill__arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+    transform: translateY(-0.5 rem);
+}
+.skill__arrow{
+    margin-left: auto;
+    transition: 0.45s;
+}
+.skill__icon{
+    margin-right: var(--md-0-75);
+}
+.skill__titles{
+    font-size: var(--h3-font-size);
+}
+.skill__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+
+}
+.skill__list{
+    row-gap: 1.5rem;
+    padding-left: 2.9rem;
+}
+.skill__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+.skill__number{
+
+}
+.skill__bar,
+.skill__percentage{
+    height: 5px;
+    border-radius: 0.25rem;
+}
+.skill__bar{
+    background-color: var(--first-color-lighter);
+}
+.skill__percentage{
+    display: block;
+    background-color: var(--first-color);
+}
+.skill__HTML{
+    width: 20%;
+}
+.skill__CSS{
+    width: 40%;
+}
+.skill__JavaScript{
+    width: 20%;
+}
+.skill__React{
+    width: 20%;
+}
+.skill__DotNet{
+    width: 20%;
+}
+.skill__Nodejs{
+    width: 20%;
+}
+.skill__Firebase{
+    width: 20%;
+}
+.skill__SQLServer{
+    width: 20%;
+}
+.skill__open .skill__list{
+    height: max-content;
+    margin-bottom: var(--md-2-5);
+}
+.skill__close .skill__list{
+    height: 0;
+    overflow: hidden;
+}
+.skill__close .skill__arrow{
+    transform: rotate(-180deg);
+}
+
+
 /********************************************************************************/
 /*************************** qualification **************************************/
 .qualification__tabs{

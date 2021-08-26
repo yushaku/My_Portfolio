@@ -503,10 +503,11 @@ img{
 .portfolio__content{
     padding: 0 1.5rem;
     text-align: center;
-
+    padding-bottom: 50px;
 }
 .portfolio__img{
     width: 250px;
+    max-height: 150px;
     border-radius: 0.5rem;
     justify-self: center;
 }
@@ -565,6 +566,9 @@ img{
     border-radius: 0.5rem;
     padding: 0.75rem 1rem 0.25rem ;
 }
+.contact__form{
+    margin-bottom: 5rem;
+}
 .contact__label{
     font-size: var(--small-font-size);
     color: var(--title-color);
@@ -578,7 +582,48 @@ img{
     border: none;
     outline: none;
 }
+/*****************************************************************************/
+/******************************  FOOTER  ********************************/
+.footer__container{
+    row-gap: 2rem;
+}
+.footer__bg{
+    background-color: var(--first-color-second);
+}
+.footer__title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--md-0-25);
+}
+.footer__subtitle{
+    display: block;
+    text-align: center;
+    font-size: var(--small-font-size);
+}
 
+.footer__socials{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__social{
+    font-size: 1.25rem;
+    margin-right: var(md-1-5);
+}
+.footer__social:hover{
+    color: var(--first-color-lighter);
+}
+.footer__copy{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-top: var(--md-1);
+}
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social{
+    color: #fff;
+}
 
 
 

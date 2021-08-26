@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/img/">
     <link rel="stylesheet" href="/assets/pdf/">
-    <!-- link to unicon icon -->
+    <!-- link to icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
+    <!-- link to forts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- link to swiper css -->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 
+    
     <title>Portfolio Website</title>
 </head>
 <body>
@@ -406,7 +409,61 @@
 
         </section>
         <!--=======================  Portfolio  ================================-->
-        
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--=============== Portfolio 1 ==================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/assets/img/project1.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern website</h3>
+                            <p class="portfolio__description">website adaptable to all devices , with UI components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-chevron-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--=============== Portfolio 2 ==================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/assets/img/project2.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Digital marketing agency</h3>
+                            <p class="portfolio__description">website adaptable to all devices , with UI components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-chevron-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--=============== Portfolio 3 ==================-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/assets/img/priject3.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern website</h3>
+                            <p class="portfolio__description">website adaptable to all devices , with UI components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fas fa-chevron-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- add arrows -->
+                <div class="swiper-button-next swiper-portfolio-icon"></div>
+                <div class="swiper-button-prev swiper-portfolio-icon"></div>
+                <!-- add pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
         
     </main>
 
@@ -426,10 +483,7 @@
 
 
     <!--========================== SWIPER JS ==============================-->
-
-
-
-
+    <script src="/assets/js/swiper-bundle.min.js"></script>
     <!-- ===================== main.js ==================== -->
     <script src="/assets/js/main.js"></script>
 </body>

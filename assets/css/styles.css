@@ -136,11 +136,14 @@ img{
     height: var(--header-height);
     justify-content:space-between;
     align-items: center;
+    background-color: var(--first-color-second);
 }
 .nav__logo,
 .nav__toggle{
-    color: var(--title-color);
+    color: #fff;
     font-weight: var(--font-medium);
+    font-size: 1.1rem;
+    padding-left: 1rem;
 }
 .nav__logo:hover{
     color: var(--first-color);
@@ -491,5 +494,50 @@ img{
 .qualification__button.qualification__active{
     color: var(--first-color);
 }
+/******************************************************************/
+/*************************** PORTFOLIO ****************************/
+.portfolio__container{
+    overflow: inherit;
+    position: relative;
+}
+.portfolio__content{
+    padding: 0 1.5rem;
+    text-align: center;
+
+}
+.portfolio__img{
+    width: 250px;
+    border-radius: 0.5rem;
+    justify-self: center;
+}
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--md-0-5);
+}
+.portfolio__description{
+    margin-bottom: var(--md-0-75);
+}
+.portfolio__button{
+    width: 11rem;
+}
+.button__icon{
+    transform: translateY(0.2rem);
+}
+.portfolio__button:hover .button__icon{
+    transform:translateX(0.5rem) ;    
+    transform: translateY(0.2rem);
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    content: "";
+}
+.swiper-portfolio-icon{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+.swiper-pagination{
+    transform: translateY(5rem);
+}
+
 
 

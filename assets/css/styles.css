@@ -48,20 +48,7 @@
     --z-modal:1000;
 
 }
-/********************************************************************/
-/*                          font size for large devices              */
-/*********************************************************************/
-@media screen and  (min-width: 980px){
-    :root{
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size:1.5rem;
-        --h3-font-size:1.25rem;
-        --normal-font-size:1rem;
-        --small-font-size:0.875rem;
-        --smaller-font-size:0.813rem;
-    }
-}
+
 /********************  variables dark theme  **************************/
 body.dark-theme{
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -99,7 +86,7 @@ HTML{
     scroll-behavior: smooth;
 }
 body{
-    margin: 0 0 var(--header-height) 0 ;
+    /* margin: 0 0 var(--header-height) 0 ; */
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--container-color);
@@ -157,12 +144,17 @@ img{
     background-color: var(--container-color);
 }
 .nav{
-    max-width: 968px;
+    background-color: var(--first-color-second);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.nav__container{
+    /* max-width: 968px; */
     display: flex;
     height: var(--header-height);
     justify-content:space-between;
     align-items: center;
-    background-color: var(--first-color-second);
 }
 .nav__logo,
 .nav__toggle{
@@ -562,6 +554,9 @@ img{
     transform:translateX(0.5rem) ;    
     transform: translateY(0.2rem);
 }
+.swiper-button-prev{
+
+}
 .swiper-button-next::after,
 .swiper-button-prev::after{
     content: "";
@@ -622,6 +617,7 @@ img{
     row-gap: 2rem;
 }
 .footer__bg{
+    padding-bottom: 2rem;
     background-color: var(--first-color-second);
 }
 .footer__title{

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- logo -->
+    <link rel="shortcut icon" href="/assets/img/undraw_Lost_online_re_upmy.svg" />
+
+    <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/img/">
     <link rel="stylesheet" href="/assets/pdf/">
@@ -26,7 +30,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link acive-link">
                             <i class="nav__icon fas fa-home"></i>Home 
                         </a>
                     </li>
@@ -58,7 +62,11 @@
                 </ul>
                 <i class="fas fa-times nav__close" id="nav-close"></i>
             </div>
+
             <div class="nav__btns">
+            <!-- theme change button -->
+            <i class="far fa-moon change-theme" style="color:#fff" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -521,6 +529,8 @@
                     </div>
                 </form>
             </div>
+
+            
         </section>
         
     </main>
@@ -547,11 +557,12 @@
             <p class="footer__copy">&#169; Bedimcode. All right reserved</p>
         </div>
     </footer>
-
-
-
     <!--========================= SCROLL TOP ==============================-->
-
+    <div>
+        <a href="#home" class="scroll-up" id="scroll-up">
+            <i class="fas fa-arrow-up scroll-up-icon"></i>
+        </a>
+    </div>
 
 
 

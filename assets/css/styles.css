@@ -62,6 +62,32 @@
         --smaller-font-size:0.813rem;
     }
 }
+/********************  variables dark theme  **************************/
+body.dark-theme{
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 80%, 90%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --text-color-light: hsl(var(--hue-color), 29%, 16%);
+    --input-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);;
+}
+
+/***********************button dark/light *****************************/
+.nav__btns{
+    display: flex;
+    align-items: center;
+}
+.change-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--md-1);
+    cursor: pointer;
+
+}
+.change-theme:hover{
+    color: var(--first-color);
+}
+
 /*======================================================================*/
 /*================================= BASE ==============================*/
 *{
@@ -201,6 +227,14 @@ img{
 /* SHOW MENU */
 .show-menu{
     bottom: 0;
+}
+/* active link  */
+.active-link{
+    color: var(--first-color);
+}
+/* change background here */
+.scroll-header{
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 /*************************************************************************/
 /*============================= HOME CONTAINER  =========================*/
@@ -624,9 +658,28 @@ img{
 .footer__social{
     color: #fff;
 }
-
-
-
+/*************  scroll up  ***************/
+.scroll-up{
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    background-color: var(--first-color);
+    opacity: 0;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.4rem;
+    z-index: var(--z-tooltip);
+    transition: 0.9s;
+}
+.scroll-up:hover{
+    background-color: var(--first-color-alt);
+}
+.scroll-up-icon{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.show-scroll{
+    opacity: 0.9;
+}
 
 
 

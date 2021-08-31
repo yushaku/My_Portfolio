@@ -270,7 +270,7 @@ img{
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
 }
-.home__discription{
+.home__description{
     margin-bottom: 5rem;
 }
 .home__scroll{
@@ -367,9 +367,6 @@ img{
     margin-top: var(--md-2-5);
     row-gap: 0;
 }
-.skill__content{
-
-}
 .skill__header{
     display: flex;
     align-items: center;
@@ -404,9 +401,6 @@ img{
 .skill__name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-}
-.skill__number{
-
 }
 .skill__bar,
 .skill__percentage{

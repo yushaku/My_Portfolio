@@ -28,24 +28,24 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /********************************************************************************/ 
 /********************************** SKILLS LIST *********************************/ 
-const   skillsContent = document.getElementsByClassName('skill__content');
-        skillHeader = document.querySelectorAll('skill__header')
+const   skillsContent = document.querySelectorAll('.skill__content'),
+        skillHeader = document.querySelectorAll('.skill__header');
 
-function toggleSkills(){
-
-    let itemClass = this.parentNode.className
-
-    for(var i = 0; i<= skillsContent.length; i++){
-        skillsContent[i].className = 'skill__content skill__close';
-    }
-    if(itemClass === 'skill__content skill__close'){
-        this.parentNode.className = 'skill__content skill__open';
-    }
+var toggleSkills = () =>{
     
+    console.log(this.parentNode)
+
+    // for(var i = 0; i<= skillsContent.length; i++){
+    //     skillsContent[i].className = 'skill__content skill__close';
+
+    //     if(skillsContent[i].className === 'skill__content skill__close'){
+    //         skillsContent[i].className = 'skill__content skill__open';
+    //     }
+    // }
 }
-skillHeader.forEach((e) => {
-    e.addEventListener('click', toggleSkills)
-});
+skillHeader.forEach(element => element.addEventListener('click', toggleSkills));
+
+
 
 /**************************************************************************************/
 /*********************************  QUALIFICATION TAB  ********************************/  

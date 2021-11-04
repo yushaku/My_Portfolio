@@ -1,3 +1,6 @@
+function cc(option){
+    console.log(option)
+}
 /*=========================  MENU SHOW Y HIDDEN  =============================*/
 const   navMenu = document.getElementById('nav-menu'),
         navToggle = document.getElementById('nav-toggle'),
@@ -28,22 +31,17 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /********************************************************************************/ 
 /********************************** SKILLS LIST *********************************/ 
-const   skillsContent = document.querySelectorAll('.skill__content'),
-        skillHeader = document.querySelectorAll('.skill__header');
+const skillHeader = document.querySelectorAll('.skill__header');
 
-var toggleSkills = () =>{
+skillHeader.forEach(element => {
+
+    element.addEventListener('click', ()=>{
     
-    console.log(this.parentNode)
+        var skillsContent = element.parentElement
+        skillsContent.classList.toggle('skill__close')
+    });
 
-    // for(var i = 0; i<= skillsContent.length; i++){
-    //     skillsContent[i].className = 'skill__content skill__close';
-
-    //     if(skillsContent[i].className === 'skill__content skill__close'){
-    //         skillsContent[i].className = 'skill__content skill__open';
-    //     }
-    // }
-}
-skillHeader.forEach(element => element.addEventListener('click', toggleSkills));
+});
 
 
 
@@ -55,6 +53,7 @@ const   tabs = document.querySelectorAll('[data-target]'),
 tabs.forEach(tab => {
 
     tab.addEventListener('click', () => {
+
         const target = document.querySelector(tab.dataset.target);
 
         tabContents.forEach(tabContent =>{
@@ -62,7 +61,7 @@ tabs.forEach(tab => {
         })
         target.classList.add('qualification__active');
 
-        tab.forEach(tab =>{
+        tabs.forEach(tab =>{
             tab.classList.remove('qualification__active');
         })
         tab.classList.add('qualification__active');

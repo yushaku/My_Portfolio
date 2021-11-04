@@ -504,12 +504,12 @@ img{
     transform: translate(6px, -7px);
 }
 
-/* .qualification [data-content] {
+.qualification__content{
     display: none;
-} */
+} 
 
-.qualification__active [data-content]{
-    display: block;
+.qualification__active{
+    display:block;
 }
 .qualification__button.qualification__active{
     color: var(--first-color);

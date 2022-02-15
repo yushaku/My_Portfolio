@@ -6,7 +6,7 @@ const swiperWrapper = document.querySelector(".swiper-wrapper")
 let workSkill = [
    {
       title: "HTML",
-      rank: "80%",
+      rank: "90%",
       type: "frontEnd",
    },
    {
@@ -21,22 +21,27 @@ let workSkill = [
    },
    {
       title: "React",
-      rank: "10%",
+      rank: "30%",
       type: "frontEnd",
    },
    {
       title: "Node JS",
-      rank: "10%",
+      rank: "30%",
       type: "backEnd",
    },
    {
       title: "mongodb",
-      rank: "10%",
+      rank: "20%",
       type: "backEnd",
    },
    {
       title: "SQLserver",
-      rank: "50%",
+      rank: "30%",
+      type: "backEnd",
+   },
+   {
+      title: "Firebase",
+      rank: "30%",
       type: "backEnd",
    },
 ];
@@ -55,20 +60,6 @@ let schoolExperiences = [
       date: "2018 - 2023",
       type: "student",
    },
-   {
-      id: 3,
-      title: "Critical thinking",
-      desc: "Cousera",
-      date: "2020 - 2021",
-      type: "student",
-   },
-   {
-      id: 4,
-      title: "Critical thinking",
-      desc: "Cousera",
-      date: "2020 - 2021",
-      type: "student",
-   },
 ];
 let workExperiences = [];
 let projects = [
@@ -79,17 +70,12 @@ let projects = [
       img:'https://user-images.githubusercontent.com/72312124/147834175-6034bf31-58f5-4610-accd-35a402e80177.png',
    },
    {
-      title: 'Viet Nam travel',
-      desc:'website adaptable to all devices',
-      link:'https://yushaku.github.io/VietNamTravel/',
-      img:'https://user-images.githubusercontent.com/72312124/147834175-6034bf31-58f5-4610-accd-35a402e80177.png',
+      title: 'Memory App',
+      desc:'a small social media',
+      link:'https://yushaku-memory-app.netlify.app',
+      img:'https://user-images.githubusercontent.com/72312124/154078621-40f41620-214b-4f5c-aff2-b4a1190b954d.png',
    },
-   {
-      title: 'Pomodoro focus',
-      desc:'website adaptable to all devices',
-      link:'https://yushaku.github.io/pomodoro/',
-      img:'https://user-images.githubusercontent.com/72312124/147834175-6034bf31-58f5-4610-accd-35a402e80177.png',
-   },
+
 
 ];
 (function app() {
@@ -105,7 +91,6 @@ function renderFrontEndSkill(skills) {
       if (skill.type === "frontEnd") {
          return `
          <div class="skill__data">
-
             <div class="skill__title">
                <h3 class="skill__name">${skill.title}</h3>
                <span class="skill__number">${skill.rank}</span>
@@ -124,12 +109,13 @@ function renderBackEndSkill(skills) {
       if (skill.type === "backEnd") {
          return `
          <div class="skill__data">
-         <div class="skill__title">
-            <h3 class="skill__name">${skill.title}</h3>
-            <span class="skill__number">${skill.rank}</span>
-         </div>
-         <div class="skill__bar">
-            <span class="skill__percentage percent${skill.rank.replaceAll("%", "")}"></span>
+            <div class="skill__title">
+               <h3 class="skill__name">${skill.title}</h3>
+               <span class="skill__number">${skill.rank}</span>
+            </div>
+            <div class="skill__bar">
+               <span class="skill__percentage percent${skill.rank.replaceAll("%", "")}"></span>
+            </div>
          </div>
          `;
       }

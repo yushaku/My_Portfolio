@@ -21,17 +21,17 @@ let workSkill = [
    },
    {
       title: "React",
-      rank: "30%",
+      rank: "50%",
       type: "frontEnd",
    },
    {
       title: "Node JS",
-      rank: "30%",
+      rank: "50%",
       type: "backEnd",
    },
    {
       title: "mongodb",
-      rank: "20%",
+      rank: "30%",
       type: "backEnd",
    },
    {

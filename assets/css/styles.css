@@ -559,9 +559,8 @@ img {
    padding-bottom: 50px;
 }
 .portfolio__img {
-   width: 250px;
-   max-height: 150px;
-   border-radius: 0.5rem;
+   width: 400px;
+   border-radius: 0.4rem;
    justify-self: center;
 }
 .portfolio__title {

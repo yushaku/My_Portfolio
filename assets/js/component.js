@@ -65,15 +65,21 @@ let workExperiences = [];
 let projects = [
    {
       title: 'Pomodoro focus',
-      desc:'website adaptable to all devices',
+      desc:'base on pomodoro technique, build this website to boost your productivity.\n with feature todos, and lofi musics help you focus on work better',
       link:'https://yushaku.github.io/pomodoro/',
       img:'https://user-images.githubusercontent.com/72312124/147834175-6034bf31-58f5-4610-accd-35a402e80177.png',
    },
    {
       title: 'Memory App',
-      desc:'a small social media',
-      link:'https://yushaku-memory-app.netlify.app',
+      desc:'a small social media, store your good memories',
+      link:'https://github.com/yushaku/memory_frontEnd',
       img:'https://user-images.githubusercontent.com/72312124/154078621-40f41620-214b-4f5c-aff2-b4a1190b954d.png',
+   },
+   {
+      title: 'Trello app clone',
+      desc:'a productivity website to manager your tasks, keep track your work flow',
+      link:'https://github.com/yushaku/Trello-Clone',
+      img:'https://user-images.githubusercontent.com/72312124/158426022-b3693610-eae9-4a3a-a266-16d16e960a7c.png',
    },
 
 
@@ -128,7 +134,7 @@ function renderEducation() {
 
          return `
          <div class="qualification__data">
-         ${school.id % 2 == 0 ? '<div></div><div> <span class="qualification__router"></span> <span class="qualification__line"></span></div>' : ''}
+         ${school.id % 2 == 0 ? '<div></div><div> <span class="qualification__router"></span> </div>' : ''}
             <div>
                <h3 class="qualification__title">${school.title}</h3>
                <span class="qualification__subtitle">${school.desc}</span>
